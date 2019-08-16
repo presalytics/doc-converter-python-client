@@ -15,7 +15,7 @@
 
 from __future__ import absolute_import
 
-__version__ = "0.1.20"
+__version__ = "0.1.21"
 
 # import apis into sdk package
 from presalytics_doc_converter.api.default_api import DefaultApi
