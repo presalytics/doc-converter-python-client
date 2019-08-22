@@ -1,11 +1,11 @@
 # presalytics_doc_converter.DefaultApi
 
-All URIs are relative to *http://api.presalytics.io/doc-converter*
+All URIs are relative to *https://api.presalytics.io/doc-converter*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**convert_to_svg**](DefaultApi.md#convert_to_svg) | **POST** /svgconvert | converts pptx file to svg image
-[**say_hello**](DefaultApi.md#say_hello) | **GET** / | Says Hello
+[**convert_to_svg**](DefaultApi.md#convert_to_svg) | **POST** /doc-converter/svgconvert | converts pptx file to svg image
+[**say_hello**](DefaultApi.md#say_hello) | **GET** /doc-converter/ | Says Hello
 
 
 # **convert_to_svg**
