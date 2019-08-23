@@ -128,7 +128,7 @@ class DefaultApi(object):
         auth_settings = []  # noqa: E501
 
         return self.api_client.call_api(
-            '/svgconvert', 'POST',
+            '/doc-converter/svgconvert', 'POST',
             path_params,
             query_params,
             header_params,
@@ -228,7 +228,7 @@ class DefaultApi(object):
         auth_settings = []  # noqa: E501
 
         return self.api_client.call_api(
-            '/', 'GET',
+            '/doc-converter/', 'GET',
             path_params,
             query_params,
             header_params,

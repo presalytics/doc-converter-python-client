@@ -50,7 +50,7 @@ class Configuration(six.with_metaclass(TypeWithDefault, object)):
     :param password: Password for HTTP basic authentication
     """
 
-    def __init__(self, host="http://api.presalytics.io/doc-converter",
+    def __init__(self, host="https://api.presalytics.io/doc-converter",
                  api_key={}, api_key_prefix={},
                  username="", password=""):
         """Constructor
@@ -257,7 +257,7 @@ class Configuration(six.with_metaclass(TypeWithDefault, object)):
                "OS: {env}\n"\
                "Python Version: {pyversion}\n"\
                "Version of the API: 0.1\n"\
-               "SDK Package Version: 0.1.5".\
+               "SDK Package Version: 0.2.5".\
                format(env=sys.platform, pyversion=sys.version)
 
     def get_host_settings(self):
@@ -267,14 +267,14 @@ class Configuration(six.with_metaclass(TypeWithDefault, object)):
         """
         return [
             {
-                'url': "http://api.presalytics.io/doc-converter",
+                'url': "https://api.presalytics.io/doc-converter/",
                 'description': "Base server",
                 'variables': {
                     'protocol': {
                         'description': "No description provided",
-                        'default_value': "http",
+                        'default_value': "https",
                         'enum_values': [
-                            "http"
+                            "https"
                         ]
                         }
                     }
